@@ -54,6 +54,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp C_AC_COPY>;
+            key-positions = <38 22 27>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
