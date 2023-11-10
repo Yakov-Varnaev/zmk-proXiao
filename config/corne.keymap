@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
 #define LWR 1
@@ -89,10 +90,10 @@
 
         Nav {
             bindings = <
-&none  &none     &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp ESC      &kp ESC      &none     &none     &kp BSPC  &kp DEL    &none
-&none  &kp LGUI  &kp LALT           &kp LCTRL   &kp LSHFT        &kp ENTER    &kp ENTER    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none
-&none  &none     &none              &none       &none            &kp TAB      &kp TAB      &none     &none     &none     &none      &none
-                                    &trans      &trans           &trans       &lt 3 SPACE  &trans    &trans
+&none  &kt C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp ESC      &kp ESC      &none     &none     &kp BSPC  &kp DEL    &none
+&none  &kp LGUI              &kp LALT           &kp LCTRL   &kp LSHFT        &kp ENTER    &kp ENTER    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none
+&none  &kp C_BRIGHTNESS_DEC  &none              &none       &none            &kp TAB      &kp TAB      &none     &none     &none     &none      &none
+                                                &trans      &trans           &trans       &lt 3 SPACE  &trans    &trans
             >;
         };
 
