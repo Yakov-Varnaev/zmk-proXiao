@@ -91,7 +91,7 @@
             bindings = <
 &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp ESC      &kp ESC    &kp C_MUTE  &none     &kp BSPC  &kp DEL    &none
 &none  &kp LGUI              &kp LALT              &kp LCTRL     &kp LSHFT        &kp ENTER    &kp ENTER  &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT  &none
-&none  &none                 &none                 &none         &none            &kp TAB      &kp TAB    &none       &none     &none     &none      &none
+&none  &to 4                 &to 0                 &none         &none            &kp TAB      &kp TAB    &none       &none     &none     &none      &none
                                                    &trans        &trans           &trans       &trans     &trans      &trans
             >;
         };
@@ -110,7 +110,7 @@
 &none   &kp Q  &kp W  &kp E        &kp R   &kp T     &kp Y   &kp U   &kp I      &kp P    &kp LBKT  &trans
 &trans  &kp A  &kp S  &kp D        &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &none
 &trans  &kp Z  &kp X  &kp C        &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp APOS  &trans
-                      &lt 4 SPACE  &trans  &trans    &trans  &trans  &trans
+                      &lt 5 SPACE  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
