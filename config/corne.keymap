@@ -77,7 +77,16 @@
 &none  &kp Q  &kp W  &kp E      &kp R            &kp T        &kp Y        &kp U           &kp I         &kp O    &kp P     &none
 &none  &kp A  &kp S  &kp D      &kp F            &kp G        &kp H        &kp J           &kp K         &kp L    &kp SEMI  &none
 &none  &kp Z  &kp X  &kp C      &kp V            &kp B        &kp N        &kp M           &kp COMMA     &kp DOT  &kp FSLH  &none
-                     &lt 0 TAB  &mt LSHFT SPACE  &lt 2 RET    &lt 1 ENTER  &mt RSHFT BSPC  &lt 0 ESCAPE
+                     &lt 0 TAB  &mt LSHFT SPACE  &lt 3 RET    &lt 2 ENTER  &mt RSHFT BSPC  &lt 0 ESCAPE
+            >;
+        };
+
+        Russian {
+            bindings = <
+&none   &kp Q  &kp W  &kp E      &kp R   &kp T     &kp Y   &kp U   &kp I      &kp P    &kp LBKT  &trans
+&trans  &kp A  &kp S  &kp D      &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &none
+&trans  &kp Z  &kp X  &kp C      &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp APOS  &trans
+                      &lt 5 TAB  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -100,7 +109,7 @@
             bindings = <
 &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp ESC      &kp ESC    &kp C_MUTE  &none     &kp BSPC  &kp DEL    &none
 &none  &kp LGUI              &kp LALT              &kp LCTRL     &kp LSHFT        &kp ENTER    &kp ENTER  &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT  &none
-&none  &tog 4                &to 0                 &none         &none            &kp TAB      &kp TAB    &none       &none     &none     &none      &none
+&none  &tog 1                &to 0                 &none         &none            &kp TAB      &kp TAB    &none       &none     &none     &none      &none
                                                    &trans        &trans           &trans       &trans     &trans      &trans
             >;
         };
@@ -114,19 +123,10 @@
             >;
         };
 
-        Russian {
-            bindings = <
-&none   &kp Q  &kp W  &kp E        &kp R   &kp T          &kp Y        &kp U   &kp I      &kp P    &kp LBKT  &trans
-&trans  &kp A  &kp S  &kp D        &kp F   &kp G          &kp H        &kp J   &kp K      &kp L    &kp SEMI  &none
-&trans  &kp Z  &kp X  &kp C        &kp V   &kp B          &kp N        &kp M   &kp COMMA  &kp DOT  &kp APOS  &trans
-                      &lt 5 SPACE  &trans  &lt 2 ENTER    &lt 1 ENTER  &trans  &trans
-            >;
-        };
-
         Alt {
             bindings = <
 &none  &none   &none  &none        &none  &kp GRAVE    &none  &none              &kp O  &none  &none  &none
-&none  &tog 4  &none  &none        &none  &none        &none  &none              &none  &none  &none  &none
+&none  &tog 1  &none  &none        &none  &none        &none  &none              &none  &none  &none  &none
 &none  &none   &none  &none        &none  &none        &none  &kp RIGHT_BRACKET  &none  &none  &none  &none
                       &lt 5 SPACE  &none  &none        &none  &none              &none
             >;
@@ -137,8 +137,8 @@
         compatible = "zmk,conditional-layers";
 
         num {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
