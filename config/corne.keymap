@@ -69,6 +69,18 @@
             key-positions = <26 28>;
             layers = <0 1>;
         };
+
+        GOBACK {
+            bindings = <&kp LG(Z)>;
+            key-positions = <26 25>;
+            layers = <0 1>;
+        };
+
+        UNDO_GOBACK {
+            bindings = <&kp LG(Z)>;
+            key-positions = <26 25 27>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
