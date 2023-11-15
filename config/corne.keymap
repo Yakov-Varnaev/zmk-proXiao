@@ -36,6 +36,7 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
         grtsgn: grtsgn {
             label = "ZM_grtsgn";
             compatible = "zmk,behavior-macro";
@@ -57,9 +58,16 @@
     combos {
         compatible = "zmk,combos";
 
-        copy {
-            bindings = <&kp C_AC_COPY>;
-            key-positions = <38 22 27>;
+        COPY {
+            bindings = <&kp LG(C)>;
+            key-positions = <27 26>;
+            layers = <0 1>;
+        };
+
+        PASTE {
+            bindings = <&kp LG(V)>;
+            key-positions = <26 28>;
+            layers = <0 1>;
         };
     };
 
