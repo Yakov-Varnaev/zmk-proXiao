@@ -143,7 +143,7 @@
             bindings = <
 &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp ESC        &kp ESC   &kp C_MUTE  &none   &kp BSPC   &kp DEL  &none
 &none  &kp LGUI              &kp LALT              &kp LCTRL     &kp LSHFT        &kp ENTER      &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &none    &none
-&none  &tog 1                &to 0                 &none         &kp LG(SPACE)    &kp LS(TAB)    &kp TAB   &none       &none   &none      &none    &none
+&none  &SwitchLangRu         &SwitchLangEn         &none         &kp LG(SPACE)    &kp LS(TAB)    &kp TAB   &none       &none   &none      &none    &none
                                                    &trans        &trans           &trans         &trans    &trans      &trans
             >;
         };
@@ -159,10 +159,10 @@
 
         Alt {
             bindings = <
-&none  &none   &none  &none        &none  &kp GRAVE    &none  &none              &kp O  &none  &none  &none
-&none  &tog 1  &none  &none        &none  &none        &none  &none              &none  &none  &none  &none
-&none  &none   &none  &none        &none  &none        &none  &kp RIGHT_BRACKET  &none  &none  &none  &none
-                      &lt 5 SPACE  &none  &none        &none  &none              &none
+&none  &none          &none  &none        &none  &kp GRAVE    &none  &none              &kp O  &none  &none  &none
+&none  &SwitchLangEn  &none  &none        &none  &none        &none  &none              &none  &none  &none  &none
+&none  &none          &none  &none        &none  &none        &none  &kp RIGHT_BRACKET  &none  &none  &none  &none
+                             &lt 5 SPACE  &none  &none        &none  &none              &none
             >;
         };
 
