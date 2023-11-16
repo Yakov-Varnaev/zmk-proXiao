@@ -51,6 +51,20 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
+        SwitchLangRu: SwitchLangRu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &kp LC(SPACE)>;
+            label = "SWITCHLANGRU";
+        };
+
+        SwitchLangEn: SwitchLangEn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LC(SPACE)>;
+            label = "SWITCHLANGEN";
+        };
     };
 };
 
