@@ -168,10 +168,10 @@
 
         Command {
             bindings = <
-&none   &kp Q  &kp LG(W)  &kp E      &kp R         &kp LG(T)    &kp Y   &kp LA(U)  &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S      &kp D      &kp F         &kp G        &kp H   &kp J      &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X      &kp C      &kp V         &kp B        &kp N   &kp M      &kp COMMA  &kp DOT  &trans    &trans
-                          &kp SPACE  &kp LEFT_ALT  &kp LCMD     &trans  &trans     &trans
+&none   &kp Q  &kp LG(W)  &kp E      &kp R         &kp LG(T)    &kp Y   &kp LA(U)  &kp I      &kp O    &kp P           &trans
+&trans  &kp A  &kp S      &kp D      &kp F         &kp G        &kp H   &kp J      &kp K      &kp L    &kp LEFT_SHIFT  &trans
+&trans  &kp Z  &kp X      &kp C      &kp V         &kp B        &kp N   &kp M      &kp COMMA  &kp DOT  &trans          &trans
+                          &kp LCTRL  &kp LEFT_ALT  &kp LCMD     &trans  &trans     &trans
             >;
         };
     };
